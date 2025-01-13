@@ -11,4 +11,16 @@
             </div>
         </section>
     {{/get}}
+    <section class="gh-recommendations">
+        <h4 class="gh-sidebar-title">Tags</h4>
+        {{#get "tags" limit="all"}}
+        <ul>
+            {{#foreach tags}}
+            <li>
+                <a href="{{url}}" class="tag-link">{{name}}</a>
+            </li>
+            {{/foreach}}
+        </ul>
+        {{/get}}
+    </section>
 {{/if}}
