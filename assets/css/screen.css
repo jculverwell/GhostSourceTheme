@@ -47,6 +47,41 @@ production stylesheet in assets/built/screen.css
 
 */
 
+/* Start Jim */
+
+.sidebar-categories ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-categories li {
+    margin-bottom: 5px;
+}
+
+/* .sidebar-categories ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-categories li {
+    margin-bottom: 5px;
+}
+
+.sidebar-categories a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9em;
+}
+
+.sidebar-categories a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+} */
+
+/* End Jim */
+
 /* 1. Variables
 /* ---------------------------------------------------------- */
 
@@ -1448,6 +1483,7 @@ Search                         LOGO                    Login Subscribe
 
 .gh-featured {
     margin-top: 100px;
+    margin-bottom: 100px; /* Added by Jim */
 }
 
 .gh-navigation + .gh-featured {

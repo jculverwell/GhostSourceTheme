@@ -1,4 +1,23 @@
 {{#if showFeatured}}
+    <!-- Start Jim -->
+    <section class="gh-featured gh-outer">
+        <div class="gh-featured-inner gh-inner sidebar-categories">
+            <h2 class="gh-featured-title">Categories</h2>
+            {{#get "tags" limit="all"}}
+            <ul>
+                {{#foreach tags}}
+                <li>
+                    <a class="gh-card-link" href="{{url}}">
+                        <h5 class="gh-card-title is-title">{{name}}</h5>
+                    </a>
+                    {{!-- <a href="{{url}}" class="gh-card-title is-title">{{name}}</a> --}}
+                </li>
+                {{/foreach}}
+            </ul>
+            {{/get}}
+        </div>
+    </section>
+    <!-- End Jim -->
     {{#get "posts" filter="featured:true" include="authors" limit=limit as |featured|}}
         <section class="gh-featured gh-outer">
             <div class="gh-featured-inner gh-inner">
@@ -11,8 +30,9 @@
             </div>
         </section>
     {{/get}}
-    <section class="gh-recommendations">
-        <h4 class="gh-sidebar-title">Tags</h4>
+    
+    {{!-- <section class="gh-recommendations">
+        <h4 class="gh-sidebar-title">Categories</h4>
         {{#get "tags" limit="all"}}
         <ul>
             {{#foreach tags}}
@@ -22,5 +42,5 @@
             {{/foreach}}
         </ul>
         {{/get}}
-    </section>
+    </section> --}}
 {{/if}}

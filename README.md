@@ -1,11 +1,11 @@
 # Jim Notes
 
 1. npm install
-2. make changes
+2. make changes in featured.hbs
 3. npm run zip
 4. upload zip in dist to ghost admin
 
-# Source
+# Source (Name of the theme)
 
 The default theme for [Ghost](http://github.com/tryghost/ghost/). This is the latest development version of Source! If you're just looking to download the latest release, head over to the [releases](https://github.com/TryGhost/Source/releases) page.
 
